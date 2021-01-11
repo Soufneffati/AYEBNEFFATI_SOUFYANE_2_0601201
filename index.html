@@ -4,28 +4,50 @@
 <head>
     <meta charset="utf-8">
     <title> Reservia </title>
-        <link rel="stylesheet" href="reservia_style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%7CRaleway:bold">
-        <meta name="description" content="Reservation d'herbegement dans la ville de votre choix">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/5da6fe0c36.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Raleway">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <meta name="description" content="Reservia, trouvez votre hébergement pour des vacances de rêves en plein centre ville ou en pleine nature !">
         <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico" />
         <link rel="shortcut icon" type="image/x-icon" href="images/logo/favicon.ico" />
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Raleway">
+
+    <style>
+    body {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        margin: 0;
+      }
+      
+    </style>
 </head>
 
 <body>
         <!-- HEADER -->
         <header>
-            <div id="navbar">
+
+            <div id="navbar"><!-- conteneur flex-->
+
+            <div class="logo"><!-- élément conteneur flex-->
+
                 <h1><a href="index.html"><img src="images/logo/Reservia.svg" alt="reservia"></a></h1>
-            <div id="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#rooms">Hébergements</a></li>
+                </div>
+                
+            <div id="menu"><!--élément conteneur flex-->
+
+                <nav><!--élément flex-->
+                    <ul><!--conteneur flex-->
+                        <li><a href="#rooms">Hébergements</a></li><!--éléments flex-->
                         <li><a href="#activities">Activités</a></li>
                     </ul>
                  </nav>
+            <div class="sign in"><!--élément conteneur flex-->
+
                      <span class="sign-in"><a href="">S'inscrire</a></span>
+                    </div>         <!--élément flex-->
             </div>
             </div>                        
         </header>
@@ -37,57 +59,57 @@
                 <h2> Trouver votre hébergement pour des vacances de rêves </h2>
                 <p> En plein centre ville ou en pleine nature </p>
             </div>
-            <div id="search-bar">
-                <span class="search-bar"><i class="fas fa-map-marker-alt"></i></span>
-                <form method="post" action="traitement.php">
-                    <input type="search" placeholder="Destination" value="Marseille, France">
+            <div id="search-bar"><!--conteneur flex-->
+                <span class="search-bar"><i class="fas fa-map-marker-alt"></i></span><!--élément flex-->
+                <form method="action" action="search"><!--élément flex-->
+                    <input type="search" placeholder="Destination" value="Marseille, France"><!--élément flex-->
                 </form>
-               <span class="button"> <button class="search-button" type="button"> Rechercher </button></span>
+               <span class="button"> <button class="search-button" type="button"> Rechercher </button></span><!--élément flex-->
                <span class="search"><i class="fas fa-search"></i></span>
             </div>
             </div>
             <!-- FILTER SECTION --> 
         <section id="filter">
-            <div class="filter">
-            <div class="filter-title">
+            <div class="filter"><!--contenenur flex-->
+            <div class="filter-title"><!--élément flex-->
                 <h2> Filtres </h2>
             </div>
-            <div class="price">
-                <i class="fas fa-money-bill-wave"></i>
-                <h3>Economique</h3>
+            <div class="price"><!--élément/conteneur flex-->
+                <i class="fas fa-money-bill-wave"></i><!--élément flex-->
+                <h3>Economique</h3><!--élément flex-->
             </div>
-            <div class="family">
-                <i class="fas fa-child"></i>
-                <h3>Familial</h3>
+            <div class="family"><!--élément/conteneur flex-->
+                <i class="fas fa-child"></i><!--élément flex-->
+                <h3>Familial</h3><!--élément flex-->
             </div>
-            <div class="romantic">
-                <i class="fas fa-heart"></i>
-                <h3>Romantique</h3>
+            <div class="romantic"><!--élément/conteneur flex-->
+                <i class="fas fa-heart"></i><!--élément flex-->
+                <h3>Romantique</h3><!--élément flex-->
             </div>
-            <div class="animal">
-                <i class="fas fa-dog"></i>
-                <h3>Animaux autorisés</h3>
+            <div class="animal"><!--élément/conteneur flex-->
+                <i class="fas fa-dog"></i><!--élément flex-->
+                <h3>Animaux autorisés</h3><!--élément flex-->
             </div>
             </div>
-            <div class="info">
-                <span class="fa-stack">
+            <div class="info"><!--contenenur flex-->
+                <span class="fa-stack"><!--élément flex-->
                     <i class="fas fa-info fa-stack-1x"></i>
                     <i class="far fa-circle fa-stack-2x"></i>
                 </span>
-                <p> Plus de 500 logements sont disponibles dans cette ville </p>
+                <p> Plus de 500 logements sont disponibles dans cette ville </p><!--élément flex-->
             </div>
         </section>
         <!-- ROOMS SECTION -->
-        <div id="container">
-        <section id="rooms">
-            <div class="rooms-title">
+        <div id="container"><!--contenenur flex-->
+        <section id="rooms"><!--élément/conteneur flex-->
+            <div class="rooms-title"><!--élément flex-->
                 <h3> Hébergements à Marseille </h3>
             </div>
-            <div id="main-rooms">
-            <div class="rooms">
-                <a href="">
+            <div id="main-rooms"><!--élément/conteneur flex-->
+            <div class="rooms"><!--élément/conteneur flex-->
+                <a href=""><!--élément flex-->
                     <figure class="canebiere">
-                        <img src="images/canebiere.jpg" alt="auberge de la canebiere">
+                        <img src="images/hebergements/4_small/canebière.jpg" alt="auberge de la canebiere">
                     <figcaption>
                         <h4> Auberge la Cannebière </h4>
                         <p> Nuit à partir de <strong>25€</strong> </p>
@@ -96,10 +118,10 @@
                     </figure>
                 </a>
             </div>
-            <div class="rooms">
-               <a href="">
+            <div class="rooms"><!--élément/conteneur flex-->
+               <a href=""><!--élément flex-->
                     <figure class="hotel-port">
-                        <img src="images/hotel-vieux-port.jpg" alt="hotel vieux port">
+                        <img src="images/hebergements/4_small/hotel-vieux-port.jpg" alt="hotel vieux port">
                     <figcaption>
                         <h4> Hôtel du Vieux Port </h4>
                         <p> Nuit à partir de <strong>52€</strong> </p>
@@ -108,8 +130,8 @@
                     </figure>
                 </a>
             </div>
-            <div class="rooms">
-                <a href="">  
+            <div class="rooms"><!--élément/conteneur flex-->
+                <a href=""><!--élément flex-->  
                     <figure class="mouettes">
                         <img src="images/hebergements/4_small/hotel-les-mouettes.jpg" alt="hotel les mouettes">
                     <figcaption>
@@ -120,8 +142,8 @@
                     </figure>
                 </a>
             </div>
-            <div class="rooms">
-                <a href="">
+            <div class="rooms"><!--élément/conteneur flex-->
+                <a href=""><!--élément flex-->
                     <figure class="mer">
                         <img src="images/hebergements/4_small/hotel-de-la-mer.jpg" alt="hotel de la mer">
                     <figcaption>
@@ -132,8 +154,8 @@
                     </figure>
                 </a>
             </div>
-            <div class="rooms">
-                <a href="">
+            <div class="rooms"><!--élément/conteneur flex-->
+                <a href=""><!--élément flex-->
                     <figure class="panier">
                         <img src="images/hebergements/4_small/auberge-panier.jpg" alt="auberge le panier">
                     <figcaption>
@@ -144,8 +166,8 @@
                     </figure>
                 </a>
             </div>
-            <div class="rooms">
-                <a href="">
+            <div class="rooms"><!--élément/conteneur flex-->
+                <a href=""><!--élément flex-->
                     <figure class="amina">
                         <img src="images/hebergements/4_small/hotel-amina.jpg" alt="hotel chez amina">
                     <figcaption>
@@ -157,22 +179,22 @@
                 </a>
             </div>
             </div>
-            <div class="more">
+            <div class="more"><!--élément flex-->
                 <a href=""> Afficher plus </a>
             </div>
         </section>
         <!-- ASIDE -->
-        <aside>
-            <div class="aside-title">
-                <h3> Les plus populaires </h3>
-                <i class="fas fa-chart-line"></i>
+        <aside><!--élément/conteneur flex-->
+            <div class="aside-title"><!--élément/conteneur flex-->
+                <h3> Les plus populaires </h3><!--élément flex-->
+                <i class="fas fa-chart-line"></i><!--élément flex-->
             </div>
-            <div id="aside">
-            <div class="aside">
+            <div id="aside"><!--élément/conteneur flex-->
+            <div class="aside"><!--élément flex-->
                 <a href="">
-                    <figure class="matin">
-                        <img src="images/hebergements/4_small/soleil-matin.jpg" alt="hotel le soleil du matin">
-                    <figcaption>
+                    <figure class="matin"><!--conteneur flex-->
+                        <img src="images/hebergements/4_small/soleil-matin.jpg" alt="hotel le soleil du matin"><!--élément flex-->
+                    <figcaption><!--élément flex-->
                         <h4> Hôtel Le soleil du matin </h4>
                         <p> Nuit à partir de <strong>128€</strong> </p>
                         <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
@@ -180,11 +202,11 @@
                     </figure>
                 </a>
             </div>
-            <div class="aside">
+            <div class="aside"><!--élément flex-->
                 <a href="">
-                    <figure class="chambre">
-                        <img src="images/hebergements/4_small/coeur-de-eau.jpg" alt="chambres d'hotes au coeur de l'eau">
-                    <figcaption>
+                    <figure class="chambre"><!--conteneur flex-->
+                        <img src="images/hebergements/4_small/coeur-de-eau.jpg" alt="chambres d'hotes au coeur de l'eau"><!--élément flex-->
+                    <figcaption><!--élément flex-->
                         <h4> Au coeur de l'eau Chambres d'hôtes </h4>
                         <p> Nuit à partir de <strong>71€</strong> </p>
                         <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span>
@@ -192,11 +214,11 @@
                     </figure>
                 </a>
             </div>
-            <div class="aside">
+            <div class="aside"><!--élément flex-->
                 <a href="">
-                    <figure class="bleublanc">
-                        <img src="images/hebergements/4_small/hotel-bleu-blanc.jpg" alt="hotel tout bleu et blanc">
-                    <figcaption>
+                    <figure class="bleublanc"><!--conteneur flex-->
+                        <img src="images/hebergements/4_small/hotel-bleu-blanc.jpg" alt="hotel tout bleu et blanc"><!--élément flex-->
+                    <figcaption><!--élément flex-->
                         <h4> Hôtel Tout bleu et Blanc </h4>
                         <p> Nuit à partir de <strong>68€</strong> </p>
                         <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span>
@@ -208,12 +230,12 @@
         </aside>
         </div>
         <!-- ACTIVITIES SECTION -->
-        <section id="activities">
-            <div class="activities">
+        <section id="activities"><!--conteneur flex-->
+            <div class="activities"><!--élément flex-->
                 <h3> Activités à Marseille </h3>
             </div>
-            <div id="main-visit">
-              <div class="vieuxp">
+            <div id="main-visit"><!--élément conteneur flex-->
+              <div class="vieuxp"><!--élément flex-->
                 <a href="">
                     <figure>
                         <img src="images/activites/4_small/vieux-port.jpg" alt="vieux port">
@@ -223,7 +245,7 @@
                     </figure>
                 </a>
             </div>
-            <div class="pom-fri">
+            <div class="pom-fri"><!--élément flex-->
             <div class="pomegues">
                 <a href="">
                     <figure>
@@ -234,7 +256,7 @@
                     </figure>
                 </a>
             </div>
-            <div class="frioul">
+            <div class="frioul"><!--élément flex-->
                 <a href="">
                     <figure>
                         <img src="images/activites/4_small/iles-du-frioul.jpg" alt="iles du frioul">
@@ -245,7 +267,7 @@
                 </a>
             </div>
             </div>
-            <div class="calanques">
+            <div class="calanques"><!--élément flex-->
                 <a href="">
                     <figure>
                         <img src="images/activites/4_small/parc-national-des-calanques.jpg" alt="parc national des calanques">
@@ -255,7 +277,7 @@
                     </figure>
                 </a>
             </div>
-            <div class="dame-long">
+            <div class="dame-long"><!--élément flex-->
             <div class="dame">
                 <a href="">
                     <figure>
@@ -266,7 +288,7 @@
                     </figure>
                 </a>
             </div>
-            <div class="longchamp">
+            <div class="longchamp"><!--élément flex-->
                 <a href="">
                     <figure>
                         <img src="images/activites/4_small/parc-longchamp.jpg" alt="parc longchamp">
@@ -282,22 +304,22 @@
         </main>
         <!-- FOOTER -->
         <footer>
-            <div id="footer">
-            <div class="footer">
-                <h4> A propos </h4>
-                <a href=""> Fonctionnement du site </a>
-                <a href=""> Conditions générales de vente </a>
-                <a href=""> Données et confidentialité </a>
+            <div id="footer"><!--conteneur flex-->
+            <div class="footer"><!--Elément conteneur flex-->
+                <h4> A propos </h4><!--élément flex-->
+                <a href=""> Fonctionnement du site </a><!--élément flex-->
+                <a href=""> Conditions générales de vente </a><!--élément flex-->
+                <a href=""> Données et confidentialité </a><!--élément flex-->
             </div>
-            <div class="footer">
-                <h4> Nos hébergements </h4>
-                <a href=""> Charte qualité </a>
-                <a href=""> Soumettre votre hôtel </a>
+            <div class="footer"><!--Elément conteneur flex-->
+                <h4> Nos hébergements </h4><!--élément flex-->
+                <a href=""> Charte qualité </a><!--élément flex-->
+                <a href=""> Soumettre votre hôtel </a><!--élément flex-->
             </div>
-            <div class="footer">
-                <h4> Assistance </h4>
-                <a href=""> Centre d'aide </a>
-                <a href=""> Nous contacter </a>
+            <div class="footer"><!--Elément conteneur flex-->
+                <h4> Assistance </h4><!--élément flex-->
+                <a href=""> Centre d'aide </a><!--élément flex-->
+                <a href=""> Nous contacter </a><!--élément flex-->
             </div>
             </div>
         </footer>     
