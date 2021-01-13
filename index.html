@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+<head><!-- Metatags, links to stylesheets -->
     <meta charset="utf-8">
     <title> Reservia </title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css"><!--La feuille de style est liée au fichier HTML par l'intermédiaire d'une balise <script src="lien la feuille de style"></script> situé dans le <head></head>.-->
+        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
         <script src="https://kit.fontawesome.com/5da6fe0c36.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Raleway">
+        <link href="https://fonts.googleapis.com/css?family=Raleway"><!--styles de police-->
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta name="description" content="Reservia, trouvez votre hébergement pour des vacances de rêves en plein centre ville ou en pleine nature !">
-        <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="images/logo/favicon.ico" />
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Raleway">
+        <meta name="description" content="Reservia, trouvez votre hébergement pour des vacances de rêves en plein centre ville ou en pleine nature !"><!--La plupart des réseaux sociaux se basent sur les “meta tags” pour compléter ces informations. Ce sont des balises meta contenues dans le<head> de votre site. Titre de la publication à partager et description associée-->
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Raleway">
 
     <style>
     body {
@@ -40,7 +38,7 @@
 
                 <nav><!--élément flex-->
                     <ul><!--conteneur flex-->
-                        <li><a href="#rooms">Hébergements</a></li><!--éléments flex-->
+                        <li><a href="#rooms">Hébergements</a></li><!--éléments flex.Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui mènent aux sections de la page.-->
                         <li><a href="#activities">Activités</a></li>
                     </ul>
                  </nav>
@@ -59,7 +57,7 @@
                 <h2> Trouver votre hébergement pour des vacances de rêves </h2>
                 <p> En plein centre ville ou en pleine nature </p>
             </div>
-            <div id="search-bar"><!--conteneur flex-->
+            <div id="search-bar"><!--conteneur flex.Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.-->
                 <span class="search-bar"><i class="fas fa-map-marker-alt"></i></span><!--élément flex-->
                 <form method="action" action="search"><!--élément flex-->
                     <input type="search" placeholder="Destination" value="Marseille, France"><!--élément flex-->

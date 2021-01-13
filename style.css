@@ -1,9 +1,9 @@
 //* FEUILLE DE STYLE SITE RESERVIA */
 body {
-        font-family: 'Raleway', sans-serif;
-        font-size: 1rem;
-        margin: 0;
-        width: 100%
+        font-family: 'Raleway', sans-serif;/* Police utilisée */
+        font-size: 1rem;/* Taille de la police */
+        margin: 0;/* ajoute de l'espace à l'intérieur de l'élément */
+        width: 100%;/* largeur de l'élément */
       }
 
 
@@ -11,6 +11,8 @@ body {
 {
     box-sizing: border-box;
 }
+
+
 /* HEADER */
 
 header
@@ -37,7 +39,7 @@ ul
 #navbar nav ul li
 {
     list-style-type: none;
-    padding: 20px;
+    padding: 20px;/* ajoute de l'espace à l'intérieur de l'élément */
 }
 li a/* ancres menant aux sections de la page.*/
 {
@@ -116,7 +118,7 @@ li:focus
    border: 10px solid #F2F2F2;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
-   background: #F2F2F2; 
+   background: #F2F2F2; /* couleur de fond */
    
 }
 .search 
@@ -180,7 +182,7 @@ input/*Le champ de recherche est donc un champ de saisie, dont le texte peut êt
 {
     color: #0065FC;
     background: #DEEBFF;
-    border: 13px solid #DEEBFF;
+    border: 13px solid #DEEBFF;/* ajoute une bordure */
     border-radius: 100%;
 }
 .price h3, .family h3, .romantic h3, .animal h3
@@ -392,7 +394,7 @@ aside
 }
 .aside span
 {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 /* ACTIVITIES */
 
@@ -495,9 +497,12 @@ aside
 {
     font-weight: bold;
 }
-/*                                                              MEDIA QUERIES   
-/* MEDIA QUERIES :All (tous les formats),Screen (tous écrans valeur par défaut si non précisé)*/                                                            */
 
+/*                                                              MEDIA QUERIES   
+/* MEDIA QUERIES :All (tous les formats),Screen (tous écrans valeur par défaut si non précisé)*/       */
+
+
+/*Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)*/
 @media screen and (max-width: 768px)
 {
     body 
@@ -637,7 +642,7 @@ aside
     }
     .aside span
     {
-        margin: 0;
+        margin: 1;
     }
     .aside figure
     {
@@ -804,7 +809,7 @@ aside
 /*Ecrans de taille inférieur 1600 pixels et supérieur (pc de bureau à grand écran).*/
 @media screen and (min-width: 1600px) {
     body {
-        body: 100%;
+        
         margin: auto;
         overflow-x: hidden;
     }
