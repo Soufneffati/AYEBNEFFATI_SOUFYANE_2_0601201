@@ -1,18 +1,15 @@
-//* FEUILLE DE STYLE SITE RESERVIA */
-body {
-        font-family: 'Raleway', sans-serif;/* Police utilisée */
-        font-size: 1rem;/* Taille de la police */
-        margin: 0;/* ajoute de l'espace à l'intérieur de l'élément */
-        width: 100%;/* largeur de l'élément */
-      }
+/* FEUILLE DE STYLE SITE RESERVIA */
 
-
+body
+{
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
 *
 {
     box-sizing: border-box;
 }
-
-
 /* HEADER */
 
 header
@@ -39,9 +36,9 @@ ul
 #navbar nav ul li
 {
     list-style-type: none;
-    padding: 20px;/* ajoute de l'espace à l'intérieur de l'élément */
+    padding: 20px;
 }
-li a/* ancres menant aux sections de la page.*/
+li a
 {
     text-decoration: none;
     color: black;
@@ -54,7 +51,7 @@ li a/* ancres menant aux sections de la page.*/
 }
 li a:hover
 {
-    color: #0065FC;/*Les couleurs de la charte sont le bleu #0065FC*/
+    color: #0065FC;
 }
 li {
     border-top: 3px solid #fff;
@@ -118,15 +115,14 @@ li:focus
    border: 10px solid #F2F2F2;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
-   background: #F2F2F2; /* couleur de fond */
+   background: #F2F2F2; 
    
 }
 .search 
 {
     display: none;
 }
-input/*Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager.
- En revanche, à ce stade, le bouton de recherche n'est pas fonctionnel.*/
+input
 {
     border: 2px solid #F2F2F2;
     height: 2.7em;
@@ -145,7 +141,7 @@ input/*Le champ de recherche est donc un champ de saisie, dont le texte peut êt
 
 /* FILTER SECTION */
 
-#filter/*Les filtres ne sont pas fonctionnels pour cette version. Ils changent d’apparence au survol*/
+#filter
 {
     padding-left: 50px;
 }
@@ -155,7 +151,7 @@ input/*Le champ de recherche est donc un champ de saisie, dont le texte peut êt
     align-items: center;
     margin-top: 30px;
 }
-.price:hover, .family:hover, .romantic:hover, .animal:hover/*Ils changent d’apparence au survol*//* gris pour le fond #F2F2F2.*/
+.price:hover, .family:hover, .romantic:hover, .animal:hover
 {
     background: #DEEBFF;
 }
@@ -182,7 +178,7 @@ input/*Le champ de recherche est donc un champ de saisie, dont le texte peut êt
 {
     color: #0065FC;
     background: #DEEBFF;
-    border: 13px solid #DEEBFF;/* ajoute une bordure */
+    border: 13px solid #DEEBFF;
     border-radius: 100%;
 }
 .price h3, .family h3, .romantic h3, .animal h3
@@ -280,7 +276,7 @@ input/*Le champ de recherche est donc un champ de saisie, dont le texte peut êt
     font-size: small;
     padding-left: 5px;
 }
-.fa-star.grey/* gris pour le fond #F2F2F2.*/
+.fa-star.grey
 {
     color: #F2F2F2;
     font-size: small;
@@ -394,7 +390,7 @@ aside
 }
 .aside span
 {
-    margin-top: 0px;
+    margin-top: 30px;
 }
 /* ACTIVITIES */
 
@@ -405,7 +401,7 @@ aside
     }
 #main-visit
 {
-    
+    display: -o-flexblox;
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
@@ -497,12 +493,8 @@ aside
 {
     font-weight: bold;
 }
+/*                                                              MEDIA QUERIES                                                               */
 
-/*                                                              MEDIA QUERIES   
-/* MEDIA QUERIES :All (tous les formats),Screen (tous écrans valeur par défaut si non précisé)*/       */
-
-
-/*Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)*/
 @media screen and (max-width: 768px)
 {
     body 
@@ -642,7 +634,7 @@ aside
     }
     .aside span
     {
-        margin: 1;
+        margin: 0;
     }
     .aside figure
     {
@@ -735,10 +727,7 @@ aside
        padding: 5px;
    }
 }
-
-/*Les écrans compris entre 769 et 1299 pixels: Tablettes*/
-@media screen and (min-width: 769px) and (max-width: 1350px) 
-{
+@media screen and (min-width: 769px) and (max-width: 1299px) {
     body {
         width: 100%;
     }
@@ -776,7 +765,6 @@ aside
         flex-wrap: wrap;
     }
 }
-/*Les écrans compris entre 1300 et 1599 pixels: PC portable*/
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
     body {
         width: 100%;
@@ -806,10 +794,9 @@ aside
         margin:auto;
     }
 }
-/*Ecrans de taille inférieur 1600 pixels et supérieur (pc de bureau à grand écran).*/
 @media screen and (min-width: 1600px) {
     body {
-        
+        body: 100%;
         margin: auto;
         overflow-x: hidden;
     }
