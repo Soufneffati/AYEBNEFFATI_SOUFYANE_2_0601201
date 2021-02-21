@@ -115,7 +115,7 @@ li:focus
    border: 10px solid #F2F2F2;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
-   background: #F2F2F2; 
+   background: #f2f2f2fd; 
    
 }
 .search 
@@ -132,7 +132,7 @@ input
 {
     cursor: pointer;
     border: 10px solid #0065FC;
-    background: #0065FC;
+    background: #0065fcfd;
     color: #ffffff;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -178,7 +178,7 @@ input
 {
     color: #0065FC;
     background: #DEEBFF;
-    border: 13px solid #DEEBFF;
+    border: 13px solid #deebfffd;
     border-radius: 100%;
 }
 .price h3, .family h3, .romantic h3, .animal h3
@@ -284,7 +284,7 @@ input
 .rooms figure
 {
     margin: 0;
-    background: #ffffff;
+    background: #fffffffd;
     border: 2px solid #ffffff;
     border-radius: 25px;
     box-shadow: 4px 4px 6px #aaa;
@@ -360,7 +360,7 @@ aside
 .aside figure
 {
     display: flex;
-    background: #ffffff;
+    background: #fffffffd;
     border: 4px solid #ffffff;
     border-radius: 25px;
     box-shadow: 4px 4px 6px #aaa;
@@ -566,7 +566,7 @@ aside
     }
     .search
     {
-        background: #0065FC;
+        background: #0065fcfd;
         border: 10px solid #0065FC;
         border-radius: 10px;
         display: flex;
@@ -796,7 +796,7 @@ aside
 }
 @media screen and (min-width: 1600px) {
     body {
-        body: 100%;
+        width: 100%;
         margin: auto;
         overflow-x: hidden;
     }
