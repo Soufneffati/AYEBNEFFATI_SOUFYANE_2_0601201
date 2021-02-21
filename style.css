@@ -323,16 +323,14 @@ input
 }
 .aside
 {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
+    transform: scale(1);
 	transition: .3s ease-in-out;
 }
 .aside:hover
 {
-	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
 }
+
 aside
 {
     display: flex;
@@ -394,15 +392,14 @@ aside
 }
 /* ACTIVITIES */
 
-#activities {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+#activities 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #main-visit
 {
-    display: -o-flexblox;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
 }
@@ -413,8 +410,7 @@ aside
     object-fit: cover;
     width: 300px;
     margin: auto;
-      opacity: 1;
-	-webkit-transition: .3s ease-in-out;
+    opacity: 1;
 	transition: .3s ease-in-out;
 }
 .vieuxp img, .calanques img
@@ -465,15 +461,12 @@ aside
 {
    margin-top: 40px;
    background: #F2F2F2;
-   display: -o-flexblox;
-   display: -ms-flexbox;
    display: flex;
    width: 100%;
  }
 .footer
 {
-    display: -o-flexblox;
-    display: -ms-flexbox;
+    
     display: flex;
     flex-direction: column;
     padding: 30px;
